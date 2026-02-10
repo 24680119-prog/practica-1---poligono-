@@ -1,5 +1,5 @@
 ## Apunte : Poligono en Blender con python 
-Se crea un poligono es 2D calculado sus vertices con matematicas donde la figura se ubica en el plano XY manteniendo una altura constante al eje z para asegurar que sea un objeto en 2D, este programa trabaja directamente con mallas, que son la base de objetos geoemetricos en Blender. Cada malla se define por vertices y aristas las lineas que conectan puntos en este codigo solo se utiliza vertices y aristas, sin caras para mantener la figura en dos dimensiones.
+Se crea un poligono es 2D calculado sus vertices con matematicas donde la figura se ubica en el plano XY manteniendo una altura constante al eje z para asegurar que sea un objeto en 2D, este programa trabaja directamente con mallas, que son la base de objetos geoemetricos en Blender. Cada malla se define por vertices y aristas las lineas que conectan puntos, en este codigo solo se utiliza vertices y aristas, sin caras para mantener la figura en dos dimensiones.
 ## Explicacion del codigo.
 
 Estas lineas sirven para traer herramientas que el codigo necesita para funcionar, bpy es la libreria principal de Blender para Python sin esta libreria Python no podria comunicarse con blender.
