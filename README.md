@@ -48,10 +48,14 @@ Lista arista: esta lista se va a usar para guardar las conexiones entre los vert
 Se calcula la posicion de cada vertice del poligono usando matematicas, se convierte coordenadas polares (angulo + radio ) en coordendas cartesinas (x,y) obteniendo uniformemente distribuidos en un circulo formando un poligono regular.
 
 1.El ciclo for se repite tantas veces como los lados que tenga el poligono, cada repeticion crea un vertice.
+
 2.Se calcula el angulo donde se colocara cada vertice del poligono.
+
 3.Se realiza la conversion a coordendas cartesianas se convierte el angulo y el radio en una posicion (x, y) tambien se usa seno y coseno para posicionar el punto en el plano.
+
 4.Por ultimo se guarda el vertice en la lista de vertices 
 z= 0 nos sirve para que todos los puntos esten en el mismo plano.
+
 ```Python
      # Calculo de vertices usando coordenadas polares a cartesianas 
      for i in range(lados):
@@ -84,10 +88,15 @@ bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete()
 ```
 Se realiza la llamada a la llamada funcion crear_poligono_2d indicando los valores que se deben utilizar. Se especifica el nombre del objeto , el numero de lados y el radio, lo que provoca que el programa ejecute la funcion y genere el hexagono del radio 5.
+
 crear_poligono_2d es el nombre de la funcion 
+
 "poligono2D" es el nombre del obejto 
+
 lados=6 Indica que el poligono tendere 6 lados 
+
 radio=5 Define el tamaño del poligono 
+
 ```Python
 # Llamada a la funcion: Un hexagono de radio 5 
 crear_poligono_2d("Poligono2D", lados=6, radio=5)
