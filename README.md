@@ -69,7 +69,7 @@ En esta bloque se define las aristas es decir las lineas que conectan los vertic
 ```
 Blender recibe los datos de los vertices y aristas y se construye la malla para que el objeto exista visualmente.
 
-En la prinera linea se construye la geometria de la malla a partir de los datos calculados previamente. En esta linea se le indica a blender las coordenadas de los vertices que formaran la figura y las aristas que conectan dichos vertices. El tercer parametro se deja vacio porque no se esta definiendo caras, lo que permite mantener la figura en dos dimensiones. 
+En la prinera linea se construye la geometria de la malla a partir de los datos calculados previamente donde se le indica a blender las coordenadas de los vertices que formaran la figura y las aristas que conectan dichos vertices. El tercer parametro se deja vacio porque no se esta definiendo caras, lo que permite mantener la figura en dos dimensiones. 
 Mientras que la instruccion malla.update() se encarga de actualizar la malla despues de haber cargado los vertices y las aristas. Su funcion es indicarle a Blender que procese los datos y aplique los cambios realizados, permitiendo que el objeto se muestre correctamente en la escena.
 ```Python
      # Cargar los datos en la malla
